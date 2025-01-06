@@ -1,0 +1,78 @@
+<!doctype html>
+
+	<head>
+
+		<title>Translate</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport">
+        <link rel="icon" type="image/x-icon" href="C:\Users\olsen\OneDrive\Documents\School\Spring 2023\Web 3\efav.ico">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+	</head>
+
+
+	<body>
+    <div class="container-fluid  cover-container  d-flex flex-column " id="backBody">
+        <div class="container-lg-6 " id="formBody">
+            <div class="row">
+                <div class="col">
+                    <h1  style=font-size:75px >English-Spanish</h1>
+                 
+                    <!-- <textarea
+                    style="height: 75px"
+                    id="enText"
+                    aria-label="add log textarea"
+                  ></textarea> -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title">English:</h1>
+                            <h3><p class="card-text" id="enText"></p></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p><button type="button" onclick="speechEn()">press to talk</button> &nbsp; </p>
+                </div>
+                <div class="col-3" style="padding-bottom:25px;">
+                    <p><button type="button" onclick="readEn()">say again</button> &nbsp; </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2><p id="action"></p></h2>
+                </div>
+            </div>
+
+
+            <div class="row">   
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Spanish:</h1>
+                        <h3><p class="card-text" id="esText"></p></h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                  <p><button type="button" onclick="speechEs()">presione para hablar</button> &nbsp; </p>
+                </div>
+                <div class="col-3">               
+                  <p><button type="button" onclick="readEs()">decir de nuevo</button> &nbsp; </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+		
+	</body>
+    <script src="script.js"></script>
+</html>
